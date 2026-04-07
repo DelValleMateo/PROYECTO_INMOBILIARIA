@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #151E2D;
+  --color-navy-dark: #0F1723;
+  --color-navy-light: #1E2B3E;
+  --color-gold: #C5A059;
+  --color-gold-light: #DCB872;
+  --color-gold-dark: #AA8743;
+  --font-sans: var(--font-inter), sans-serif;
+  --font-serif: var(--font-playfair), serif;
+}
+
+:root {
+  --background: #151E2D; /* navy */
+  --foreground: #ffffff;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+/* Custom Utilities for glassmorphism / fancy cards */
+.glass-card {
+  background: rgba(30, 43, 62, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(to right, var(--color-gold), var(--color-gold-light));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
