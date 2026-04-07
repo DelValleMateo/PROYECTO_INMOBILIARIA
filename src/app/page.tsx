@@ -6,9 +6,9 @@ export default function Home() {
     <main className="min-h-screen flex flex-col font-sans">
       {/* HEADER */}
       <header className="fixed w-full z-50 bg-[#151E2D]/90 backdrop-blur-md border-b border-white/10">
-        <div className="container mx-auto px-6 h-20 flex items-center justify-between">
+        <div className="container mx-auto px-6 h-20 flex items-center justify-center md:justify-between">
           <div className="flex items-center gap-2">
-            <h1 className="font-serif text-2xl tracking-widest font-bold">
+            <h1 className="font-serif text-2xl tracking-widest font-bold text-center">
               ÉLITE <span className="text-[#C5A059]">INMOBILIARIA</span>
             </h1>
           </div>
@@ -43,21 +43,19 @@ export default function Home() {
         </div>
 
         <div className="relative z-10 w-full max-w-5xl mx-auto px-6 text-center flex flex-col items-center">
-          <span className="text-[#C5A059] tracking-[0.2em] text-sm md:text-base font-semibold mb-6 uppercase">
+          <span className="animate-fade-in-up text-[#C5A059] tracking-[0.2em] text-sm md:text-base font-semibold mb-6 uppercase">
             Bienes Raíces de Lujo
           </span>
-          <h2 className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold text-white leading-tight mb-6">
+          <h2 className="animate-fade-in-up delay-200 font-serif text-5xl md:text-7xl lg:text-8xl font-bold text-white leading-tight mb-6">
             Encuentra tu hogar <br />
-            <span className="text-[#C5A059]">ideal</span>
+            <span className="shimmer-text">ideal</span>
           </h2>
-          <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-12">
+          <p className="animate-fade-in-up delay-300 text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-12">
             Departamentos exclusivos en venta y alquiler en las mejores ubicaciones de la ciudad.
           </p>
 
-
-
           {/* STATS */}
-          <div className="grid grid-cols-3 gap-8 mt-20 w-full max-w-3xl border-t border-white/10 pt-10">
+          <div className="animate-fade-in-up delay-500 grid grid-cols-3 gap-8 mt-20 w-full max-w-3xl border-t border-white/10 pt-10">
             <div className="text-center">
               <div className="text-4xl font-serif text-[#C5A059] font-bold mb-1">500+</div>
               <div className="text-sm text-gray-300">Propiedades</div>
@@ -77,14 +75,14 @@ export default function Home() {
       {/* PROPIEDADES DESTACADAS */}
       <section id="propiedades" className="py-24 bg-[#FAFAFA] text-[#151E2D]">
         <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
+          <div className="animate-fade-in-up text-center mb-16">
             <span className="text-[#C5A059] tracking-widest text-sm font-semibold uppercase">Nuestro Portafolio</span>
             <h2 className="font-serif text-4xl md:text-5xl font-bold mt-4">Propiedades Destacadas</h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* CARD 1 */}
-            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow border border-gray-100 group">
+            <div className="animate-scale-in delay-100 bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
               <div className="relative h-64 overflow-hidden">
                 <Image src="/images/property_1_modern_1775503491892.png" alt="Property 1" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
                 <div className="absolute top-4 left-4 bg-[#C5A059] text-white text-xs font-bold px-3 py-1 rounded-full">Venta</div>
@@ -110,7 +108,7 @@ export default function Home() {
             </div>
 
             {/* CARD 2 */}
-            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow border border-gray-100 group">
+            <div className="animate-scale-in delay-200 bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
               <div className="relative h-64 overflow-hidden bg-gray-200">
                 <Image src="/images/property_2_pool_1775503506999.png" alt="Property 2" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
                 <div className="absolute top-4 left-4 bg-[#C5A059] text-white text-xs font-bold px-3 py-1 rounded-full">Venta</div>
@@ -135,8 +133,8 @@ export default function Home() {
               </div>
             </div>
 
-            {/* CARD 3 - Placeholder mock */}
-            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow border border-gray-100 group">
+            {/* CARD 3 */}
+            <div className="animate-scale-in delay-300 bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
               <div className="relative h-64 overflow-hidden bg-gray-200">
                 <Image src="/images/hero_background_1775503475267.png" alt="Property 3" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
                 <div className="absolute top-4 left-4 bg-[#151E2D] text-white text-xs font-bold px-3 py-1 rounded-full">Alquiler</div>
@@ -173,7 +171,7 @@ export default function Home() {
       {/* NUESTROS SERVICIOS */}
       <section id="servicios" className="py-24 bg-white text-[#151E2D]">
         <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
+          <div className="animate-fade-in-up text-center mb-16">
             <span className="text-[#C5A059] tracking-widest text-sm font-semibold uppercase">Lo Que Hacemos</span>
             <h2 className="font-serif text-4xl md:text-5xl font-bold mt-4">Nuestros Servicios</h2>
           </div>
@@ -234,7 +232,7 @@ export default function Home() {
       {/* SOBRE NOSOTROS */}
       <section id="nosotros" className="py-24 bg-[#151E2D] relative overflow-hidden text-white">
         <div className="container mx-auto px-6 relative z-10 flex flex-col lg:flex-row items-center gap-16">
-          <div className="lg:w-1/2">
+          <div className="animate-slide-left lg:w-1/2">
             <span className="text-[#C5A059] tracking-widest text-sm font-semibold uppercase">Sobre Nosotros</span>
             <h2 className="font-serif text-4xl md:text-5xl font-bold mt-4 mb-8">
               Tu socio de confianza en <span className="text-[#C5A059]">bienes raíces</span>
@@ -249,7 +247,7 @@ export default function Home() {
               Conoce más sobre nosotros
             </button>
           </div>
-          <div className="lg:w-1/2 grid grid-cols-2 gap-4">
+          <div className="animate-slide-right lg:w-1/2 grid grid-cols-2 gap-4">
             <div className="bg-white/5 border border-white/10 rounded-2xl p-8 text-center backdrop-blur-sm">
               <div className="text-[#C5A059] mx-auto mb-4 w-12 h-12 flex items-center justify-center">
                  <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m3-4h1m-1 4h1m-5 8h5" /></svg>
